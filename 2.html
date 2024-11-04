@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsas del Desierto</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Salsas del Desierto <span></span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index2.html">Inicio</a>
+            <a href="1.html">Salsas</a>
+            <a href="2.html">Distribución</a>
+            <a href="3.html">Nosotros</a>
+        </nav>
+    </div>
+    
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Venta de Salsas <span> Online</span></h2> 
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>Torreon, Coahuila</p>
+            </div>
+            <div class="carrito">
+                <img src="img/Carrito.png" alt="Carrito de Compras" width="88" height="88">
+                <p>Mi Carrito de Compras</p>
+            </div>
+            <a class="boton" href="#">Registrate</a>
+        </div> <!-- .contenido-hero --> 
+    </section>
+    
+    <main class="contenedor sombra">
+        <h2>Puedes comprar nuestros productos en:</h2>
+
+            <style>
+                html, body {
+            overflow-y: auto;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #111;
+                    color: white;
+                    
+                }
+        
+                h1 {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                h2 {
+                    text-align: center;
+                    margin-top: 20px;
+                    color: #111;
+                }
+        
+                .slider-container {
+                    position: relative;
+                    width: 90%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                }
+        
+                .slider {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+        
+                .slide {
+                    min-width: 20%;
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    position: relative; /* Necesario para posicionar el texto */
+                }
+        
+                .slide img {
+                    width: 100%;
+                    border-radius: 10px;
+                    display: block;
+                }
+        
+                .slide-title {
+                    
+                    position: absolute;
+                    bottom: 10px; /* Para que el título esté en la parte inferior de la imagen */
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    text-align: center;
+                    width: 90%;
+                    box-sizing: border-box;
+                }
+        
+                .nav-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border: none;
+                    color: white;
+                    padding: 10px;
+                    cursor: pointer;
+                    z-index: 1;
+                }
+        
+                .prev-btn {
+                    left: 0;
+                }
+        
+                .next-btn {
+                    right: 0;
+                }
+        
+                .nav-btn:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+                .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #222;
+        }
+        
+            </style>
+        </head>
+        <body>
+        
+        <h2>También puedes comprar en línea desde nuestra
+            página oficial enviado por DHL.</h2>
+        
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <img src="img/heb.png" alt="heb">
+                    <p class="slide-title">HEB</p>
+                </div>
+                <div class="slide">
+                    <img src="img/alsuper.jpg" alt="alsuper">
+                    <p class="slide-title">ALSUPER</p>
+                </div>
+                <div class="slide">
+                    <img src="img/oxxo.jpg" alt="oxxo">
+                    <p class="slide-title">OXXO</p>
+                </div>
+                <div class="slide">
+                    <img src="img/soriana.png" alt="soriana">
+                    <p class="slide-title">SORIANA</p>
+                </div>
+                <div class="slide">
+                    <img src="img/walmart.png" alt="walmart">
+                    <p class="slide-title">WALMART></p>
+                </div>
+            </div>
+            <button class="nav-btn prev-btn" onclick="moveSlider(-1)">&#10094;</button>
+            <button class="nav-btn next-btn" onclick="moveSlider(1)">&#10095;</button>
+        </div>
+        
+        <script>
+            let currentIndex = 0;
+        
+            function moveSlider(direction) {
+                const slider = document.getElementById('slider');
+                const totalSlides = slider.children.length;
+                currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+                slider.style.transform = `translateX(-${currentIndex * 20}%)`;
+            }
+        </script>
+        
+    
+        
+    </main>
+    <footer class="footer">
+        <p>Copyright © 2024 Salsas del Desierto. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsas del Desierto</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Salsas del Desierto <span></span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="1.html">Salsas</a>
+            <a href="2.html">Distribución</a>
+            <a href="3.html">Nosotros</a>
+        </nav>
+    </div>
+    
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Venta de Salsas <span> Online</span></h2> 
+            <div class="ubicacion-carrito">
+                <div class="ubicacion">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    <p>Torreon, Coahuila</p>
+                </div>
+                <div class="carrito">
+                    <img src="img/Carrito.png" alt="Carrito de Compras" width="88" height="88">
+                    <p>Mi Carrito de Compras</p>
+                </div>
+                
+            </div>
+            <a class="boton" href="#">Registrate</a>
+        </div> <!-- .contenido-hero --> 
+    </section>
+    
+    <style>
+        .ubicacion-carrito {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espacio entre la ubicación y el carrito */
+        }
+        .ubicacion, .carrito {
+            display: flex;
+            align-items: center;
+        }
+        .ubicacion p, .carrito p {
+            margin-left: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+    
+    
+    <main class="contenedor sombra">
+        <h2>Nuestra Misión, Visión, Ubicación y Contacto. </h2>
+
+        <div class="servicios">
+            <p>Misión: </p><p>
+                “En Salsas del Desierto, nuestra misión es ofrecer salsas artesanales de alta calidad que
+                capturan los sabores auténticos del desierto mexicano. Nos comprometemos a utilizar
+                ingredientes frescos y naturales, preservando las tradiciones culinarias de la región, mientras
+                innovamos con nuevos sabores que inspiran a nuestros clientes a disfrutar de experiencias
+                gastronómicas únicas en cada platillo.”</p> <p>
+                
+                Visión: </p><p>
+                “Ser una marca líder en salsas artesanales tanto a nivel nacional como internacional,
+                reconocida por la autenticidad de nuestros sabores, la calidad de nuestros productos, y
+                nuestro compromiso con la sostenibilidad. Aspiramos a llevar los sabores del desierto
+                mexicano a las mesas de todo el mundo, promoviendo el respeto por la cultura culinaria
+                local y contribuyendo al desarrollo económico de las comunidades donde obtenemos
+                nuestros ingredientes.”
+                </p>
+
+                <p>Contacto y Ubicación: </p>
+                <ul>
+                    <li>Num: +52 871 505 2126</li>
+                    <li>Correo: salsasdeldesiertomx@gmail.com</li>
+                    <li>Instagram: eldesierto_salsas</li>
+                    <li>Ubicación: Av. Del Desierto, Villa California, 27088 Torreón, Coah</li>
+                </ul>
+        </div> <!--.servicios-->
+        
+    
+        <section>
+            <h2>Registro</h2>
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Registrate llenando todos los campos</legend>
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Email">
+                        </div>
+                
+                        <div class="campo">
+                            <label>Contraseña</label>
+                            <input class="input-text" type="password" placeholder="Tu Contraseña">
+                        </div>
+                    </div> <!-- .contenedor-campos -->
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>Copyright © 2024 Salsas del Desierto. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+</body>
+</html>
